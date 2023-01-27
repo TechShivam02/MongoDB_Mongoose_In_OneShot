@@ -1,27 +1,6 @@
 C:\Users\Shivam Kumar>mongosh
-Current Mongosh Log ID: 63d0b8f83ffe3f38175426d1
-Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
-Using MongoDB:          6.0.4
-Using Mongosh:          1.6.2
 
-For mongosh info see: https://docs.mongodb.com/mongodb-shell/
 
-------
-   The server generated these startup warnings when booting
-   2023-01-25T01:07:38.971+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
-------
-
-------
-   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
-   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
-
-   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
-   and anyone you share the URL with. MongoDB may use this information to make product
-   improvements and to suggest MongoDB products and deployment options to you.
-
-   To enable free monitoring, run the following command: db.enableFreeMonitoring()
-   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
-------
 
 test> show dbs
 admin   40.00 KiB
