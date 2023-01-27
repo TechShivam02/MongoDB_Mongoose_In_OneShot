@@ -1,0 +1,38 @@
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb://localhost:27017/Sample",{useNewUrlParser:true , useUnifiedTopology:true}).then(()=>{
+    console.log("Connected to mongo DB Successfully");
+}).catch((err)=>{
+    console.log(err);
+})
+
+
+const student = new mongoose.Schema({
+    name : String,
+    workout: Boolean,
+    height : Number 
+})
+
+        // Model is like a collections ... 
+
+
+const Student = new mongoose.model("Student" , student);
+
+
+
+const adder = async ()=>{
+
+    const ss = new Student({
+        name : "Shivam",
+        workout:true,
+        height : 6
+    });
+
+
+    await ss.save();
+
+}
+
+
+
+    adder();
